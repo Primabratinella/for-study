@@ -3,9 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>Weather Prima</title>
 </head>
-<body>
-    
+<body cz-shortcut-listen="true">
+    <div class="weather-app">
+        <header>
+
+        </header>
+        <main>
+            <div class="weather-app-data">
+                <div>
+                    <h1 class="weather-app-city" id="city"></h1>
+                    <p class="weather-app-details">
+                        <span id="time">Wednesday 2:28</span>,
+                        <span id="description">mist</span>
+                        <br />
+                        Humidity: <strong id="humidity">71º</strong>, Wind:
+                        <strong id="wind-speed">60mph</strong>
+                    </p>
+                </div>
+                <div class="weather-app-temperature-container">
+                    <div id="icon">
+                        <img class="weather-app-icon" src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/mist-day.png">
+                    </div>
+                    <div class="weather-app-temperature" id="temperature">70</div>
+                    <div class="weather-app-unit">°F</div>
+                </div>
+            </div>
+            <div class="weather-forecast" id="forecast">
+                <div class="weather-forecast-day">
+                    <div class="weather-forecast-date">Thurs</div>
+                    <img class="weather-forecast-icon"
+                        src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png">
+            <div class="weather-forecast-temperatures">
+                <div class="weather-forecast-temperature"><strong>70º</strong>
+                </div>
+                <div class="weather-forecast-temperature">70º</div>
+            </div>
+            </div>
+            <div class="weather-forecast-day">
+                <div class="weather-forecast-date">Fri</div>
+                <img class="weather-forecast-icon"
+                    src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png">
+                <div class="weather-forecast-temperatures">
+                    <div class="weather-forecast-temperature">
+                        <strong>71º</strong>
+                    </div>
+                    <div class="weather-forecast-temperature">69º</div>
+                </div>
+            </div>
+            <div class="weather-forecast-day">
+                <div class="weather-forecast-date">Sat</div>
+                <img class="weather-forecast-icon"
+                    src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png">
+                <div class="weather-forecast-temperatures">
+                    <div class="weather-forecast-temperature">
+                        <strong>73º</strong>
+                    </div>
+                    <div class="weather-forecast-temperature">69º</div>
+                </div>
+            </div>
+            <div class="weather-forecast-day">
+                <div class="weather-forecast-date">Sun</div>
+                <img class="weather-forecast-icon"
+                    src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png">
+                <div class="weather-forecast-temperatures">
+                    <div class="weather-forecast-temperature">
+                        <strong>74º</strong>
+                    </div>
+                    <div class="weather-forecast-temperature">70º</div>
+                </div>
+            </div>
+            <div class="weather-forecast-day">
+                <div class="weather-forecast-date">Mon</div>
+                <img class="weather-forecast-icon" src="https://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png">
+                <div class="weather-forecast-temperatures">
+                    <div class="weather-forecast-temperature">
+                        <strong>72º</strong>
+                    </div>
+                    <div class="weather-forecast-temperature">68º</div>
+                </div>
+            </div>
+            </div>        
+        </main>
+
+    </div>
+
+   <script src="script.js">
+   </script> 
 </body>
 </html>
